@@ -80,7 +80,7 @@ cc.Class({
     getRandomId() {
         let random = this.getRandom(0, 100);//0-100随机数
         let chance;
-        for (let i = 0; i < this.orderList.length-1; i++) {//根据随机数确认概率
+        for (let i = 0; i < this.orderList.length; i++) {//根据随机数确认概率
             if (random<this.orderList[i]) {
                 chance = this.orderList[i];
                 break;
